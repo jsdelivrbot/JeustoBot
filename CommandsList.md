@@ -9,6 +9,7 @@ User
 ----
  
 |Command | Arguments |  Description |
+|:------:|:---------:|:--------------------------------------:|
 |!roulette |  | start a roulette |
 |!join |  | join the roulette if it's up | 
 |!leave |  | leave the roulette if you joined |
