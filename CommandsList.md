@@ -14,4 +14,3 @@ User
 |!leave |  | leave the roulette if you joined |
 |!spin |  | move a user somewhere in the waitlist randomly | 
 |!swap |  | swap the 2 users position in the waitlist | 
-
