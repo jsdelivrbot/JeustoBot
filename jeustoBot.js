@@ -1,38 +1,3 @@
-
-Skip to content
-This repository
-
-    Pull requests
-    Issues
-    Gist
-
-    @Jeusto
-
-1
-0
-
-    607
-
-Jeusto/source forked from basicBot/source
-Code
-Pull requests 0
-Projects 0
-Wiki
-Pulse
-Graphs
-Settings
-source/basicBot.js
-3cec033 on 5 Apr 2016
-@Benzi Benzi Moved the location of README .svg files so it no longer depends on ss…
-@Benzi
-@Yemasthui
-@Hunchmun
-@ServePeak
-@WouterG
-@pajlada
-@Nuvm
-@Maayan547
-3711 lines (3522 sloc) 177 KB
 /**
  *Copyright 2015 basicBot
  *Modifications (including forks) of the code to fit personal needs are allowed only for personal use and should refer back to the original source.
@@ -92,6 +57,7 @@ source/basicBot.js
             $.getScript('https://cdn.jsdelivr.net/sockjs/1.0.3/sockjs.min.js', loadSocket);
         } else loadSocket();
     }
+
     var sendToSocket = function () {
         var basicBotSettings = basicBot.settings;
         var basicBotRoom = basicBot.room;
@@ -1532,6 +1498,7 @@ source/basicBot.js
                                 if(this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                                 if( !basicBot.commands.executable(this.rank, chat) ) return void (0);
                                 else{
+
                                 }
                         }
                 },
@@ -2065,7 +2032,9 @@ source/basicBot.js
             },
 
             /*
+
             // This does not work anymore.
+
             deletechatCommand: {
                 command: 'deletechat',
                 rank: 'mod',
@@ -2086,15 +2055,18 @@ source/basicBot.js
                         for (var i = 0; i < chats.length; i++) {
                             var n = from[i].textContent;
                             if (name.trim() === n.trim()) {
+
                                 // var messagecid = $(message)[i].getAttribute('data-cid');
                                 // var emotecid = $(emote)[i].getAttribute('data-cid');
                                 // API.moderateDeleteChat(messagecid);
+
                                 // try {
                                 //     API.moderateDeleteChat(messagecid);
                                 // }
                                 // finally {
                                 //     API.moderateDeleteChat(emotecid);
                                 // }
+
                                 if (typeof $(message)[i].getAttribute('data-cid') == "undefined"){
                                     API.moderateDeleteChat($(emote)[i].getAttribute('data-cid')); // works well with normal messages but not with emotes due to emotes and messages are seperate.
                                 } else {
@@ -2106,6 +2078,7 @@ source/basicBot.js
                     }
                 }
             },
+
             */
 
             deletechatCommand: {
@@ -3735,7 +3708,3 @@ source/basicBot.js
 
     loadChat(basicBot.startup);
 }).call(this);
-
-    Contact GitHub API Training Shop Blog About 
-
-    © 2017 GitHub, Inc. Terms Privacy Security Status Help 
