@@ -22,7 +22,7 @@ User
 |!leave |  | leave the roulette if you joined | +
 |!google | tag | search the article on google | 
 |!weather | city | post the weather in the specified location | 
-|!urban | term | post the urban dictionary term | 
+|!define | term | define a term using the urban dictionary | 
 |!emoji |  | return a link to a list with emoji's | +
 |!cookie | @user | give a cookie to user | +
 |!kitkat | @user | give a kitkat to user | +
@@ -30,14 +30,12 @@ User
 |!ping |  | pong! | +
 |!thor |  | users get moved to position 1 in the waitlist if they're worthy of Thor's hammer | +
 |!8ball | question | ask the bot a question, the bot will return random variations of a yes or no answer | +
-|!mood | @user | discover user's current mood |
 |!dice |  | roll a dice | + 
-|!randomnumber |  | give a random number between 1 and 100 | 
-|!randomanimal |  | give a random animal name | 
-|!randomcolor |  | give a random color | 
-|!randomcorporation |  | give a random corporation name in the fortune 500 list  | 
-|!randomcountry |  | give a random country | 
-|!randomword |  | give a random common word | 
+|!randomnumber |  | give a random number between 1 and 100 | +
+|!randomanimal |  | give a random animal name | +
+|!randomcorporation |  | give a random corporation name in the fortune 500 list  | +
+|!randomcountry |  | give a random country | + 
+|!randomword |  | give a random common word | +
 |!plugsupport |  | return a link to plug.dj support page | +
 |!plugba |  | return a link to plug.dj brand ambassador page | +
 |!plugreddit |  | return a link to plug.dj reddit page | +
@@ -84,14 +82,15 @@ Bouncer
 |!motd | (message) + (X) | when no argument is specified, returns the Message of the Day, when X is specified, the MotD is given every X songs, when "message" is given, it sets the MotD to message | +
 |!autoskip |  | skip songs automatically when they're done (use when the circles-bug happens) | + 
 |!version |  | return the current version of JeustoBot | + 
-|!status |  | display JeustoBot's status and some settings |
+|!status |  | display JeustoBot's status and some settings | +
+|!botname |  | display bot's current name | +
 |!test |  | check if the bot is alive | +
 |!twitter |  | give a link to JeustoBot’s twitter profile | +
 |!owner |  | give some informations about JeustoBot’s owner | +
 |!jointime | @user | shows how long the user has been in the room | +
 |!afktime | @user | shows how long user has been afk | + 
 |!active | (X) | shows how many users chatted in the past X minutes. If no X specified, 60 is set as default | +
-|!sessionstats |  | display stats for the current session | 
+|!sessionstats |  | display stats for the current session | +
 |!voteratio | @user | display the vote statistic for a user | +
 |!roulette |  | start a roulette | +
 |!spin | @user | move a user somewhere in the waitlist randomly | 
@@ -116,36 +115,28 @@ Manager
  
 |Command | Arguments |  Description |
 |:------:|:---------:|:--------------------------------------:|
-|!lock |  | lock the waitlist |
-|!unlock |  | unlock the waitlist |
-|!clearchat |  | clear the chat |
-|!deletechat | @user | delete all the chat messages by a certain user |
-|!lockdown |  | lock down the room: only staff can chat |
-|!cycle |  | toggle DJ cycle | 
-|!afkremoval |  | toggle the afk check |
-|!afklimit | X | sets the maximum afk time |
-|!songstats |  | toggle song statistics | 
-|!welcome |  | toggle the welcome message | 
-|!autodisable |  | toggle the auto disable | 
-|!commanddeletion |  | toggle if bot commands gets deleted | 
-|!cycleguard |  | toggles the cycleguard |
-|!cycletimer | X | set the maximum DJ cycle time for when cycleguard is enabled 
-|!lockguard |  | toggle the lockguard | 
-|!locktimer | X | set the maximum time the waitlist can be locked if lockguard is enabled |
-|!restricteta |  | toggle the restriction on eta: grey users can use it once an hour | 
-|!voteskip |  | toggle the voteskip |
-|!setvoteskip | X | when no argument is specified, returns the current voteskip limit, when X is specified, voteskip limit is updated to the new specified limit |
-|!usercommands |  | toggle user commands | 
-|!setusercommands |  | set the cooldown on commands by grey users | 
-|!lottery |  | toggle lottery | 
-|!lotterytimer | X | set the time to wait before next lottery | 
-|!kill |  | shut down JeustoBot |
-|!reload |  | reload JeustoBot |
-|!say | (message) | make JeustoBot say anything you want |
-
-
-
-
-
-
+|!lock |  | lock the waitlist | + 
+|!unlock |  | unlock the waitlist | + 
+|!clearchat |  | clear the chat | + 
+|!deletechat | @user | delete all the chat messages by a certain user | +
+|!lockdown |  | lock down the room: only staff can chat | + 
+|!cycle |  | toggle DJ cycle | +
+|!afkremoval |  | toggle the afk check | + 
+|!afklimit | X | sets the maximum afk time | + 
+|!songstats |  | toggle song statistics | + 
+|!welcome |  | toggle the welcome message | +
+|!autodisable |  | toggle the auto disable | +
+|!commanddeletion |  | toggle if bot commands gets deleted | +
+|!cycleguard |  | toggles the cycleguard | +
+|!cycletimer | X | set the maximum DJ cycle time for when cycleguard is enabled | +
+|!lockguard |  | toggle the lockguard | +
+|!locktimer | X | set the maximum time the waitlist can be locked if lockguard is enabled | +
+|!restricteta |  | toggle the restriction on eta: grey users can use it once an hour | +
+|!voteskip |  | toggle the voteskip | +
+|!setvoteskip | X | when no argument is specified, returns the current voteskip limit, when X is specified, voteskip limit is updated to the new specified limit | +
+|!usercommands |  | toggle user commands | +
+|!setusercommands |  | set the cooldown on commands by grey users | +
+|!kill |  | shut down JeustoBot | +
+|!reload |  | reload JeustoBot | +
+|!say | message | make JeustoBot say anything you want | +
 
