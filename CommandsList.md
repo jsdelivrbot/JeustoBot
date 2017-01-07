@@ -29,7 +29,7 @@ User
 |!gif | (tag) | return a gif related to the tag provided, random gif if no tags are provided | 
 |!ping |  | pong! | 
 |!thor |  | users get moved to position 1 in the waitlist if they're worthy of Thor's hammer |
-|!8ball | (message) | ask the bot a question, the bot will return random variations of a yes or no answer |
+|!8ball | question | ask the bot a question, the bot will return random variations of a yes or no answer |
 |!mood | @user | discover user's current mood |
 |!dice |  | throw a dice |
 |!randomnumber |  | give a random number between 1 and 100 | 
@@ -46,4 +46,20 @@ User
 |!plugblog |  | return a link to plug.dj blog page |
 |!plugevents |  | return a link to plug.dj events page |
 |!plugsubscriber |  | return a link to plug.dj subscription page |
+
+DJ Resident
+----
+ 
+|Command | Arguments |  Description |
+|:------:|:---------:|:--------------------------------------:|
+|!english | @user | ask user to speak english (asked in the language they set plug to) | 
+|!link |  | give a link to the current song | 
+|!whois | @user | returns plug.dj related information about user |
+|!getid | @user | get user’s plug.dj ID |
+|!profile | @user | return a link to user’s plug.dj profile |
+|!hello |  | say hello to JeustoBot |
+|!bye |  | say goodbye to JeustoBot | 
+
+
+
 
