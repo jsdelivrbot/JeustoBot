@@ -13,7 +13,7 @@ User
 |!commands |  | give a link to the commands | +
 |!help |  | return a link to get started with plug.dj | +
 |!eta | (@user) | show how long you have to wait before you reach the booth | +
-|!autowoot |  | return a link to RCS, the advised script/plugin to use for autowooting +
+|!autowoot |  | return a link to RCS, the advised script/plugin to use for autowooting | +
 |!rcs |  | return a link to RCS | +
 |!ba |  | explain the Brand Ambassador rank | +
 |!adblock |  | return a link to download Adblock | +
@@ -31,7 +31,7 @@ User
 |!thor |  | users get moved to position 1 in the waitlist if they're worthy of Thor's hammer | +
 |!8ball | question | ask the bot a question, the bot will return random variations of a yes or no answer | +
 |!mood | @user | discover user's current mood |
-|!dice |  | throw a dice | + 
+|!dice |  | roll a dice | + 
 |!randomnumber |  | give a random number between 1 and 100 | 
 |!randomanimal |  | give a random animal name | 
 |!randomcolor |  | give a random color | 
