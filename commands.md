@@ -20,8 +20,8 @@ User
 |!dclookup / !dc | (@user) | do dclookup for user | 
 |!join |  | join the roulette if it's up | 
 |!leave |  | leave the roulette if you joined |
-|!google | tag | search the article on google |
-|!weather | city | post the weather in the specified location |
+|!google | tag | search the article on google | ----
+|!weather | city | post the weather in the specified location | ----
 |!urban | term | post the urban dictionary term |
 |!emoji |  | return a link to a list with emoji's |
 |!cookie | @user | give a cookie to user | 
