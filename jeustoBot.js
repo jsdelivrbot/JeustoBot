@@ -1,9 +1,22 @@
-/**
- *Copyright 2015 basicBot
- *Modifications (including forks) of the code to fit personal needs are allowed only for personal use and should refer back to the original source.
- *This software is not for profit, any extension, or unauthorised person providing this software is not authorised to be in a position of any monetary gain from this use of this software. Any and all money gained under the use of the software (which includes donations) must be passed on to the original author.
- */
+/*
+   
+    JeustoBot - Copyright (c) 2017 Jeusto
+    Please do not copy or modify without permission.
 
+    BOT OWNER: JEUSTO
+    CONTACT: jeustographics@gmail.com
+    TWITTER: https://twitter.com/Jeustoo
+
+    ======================================================
+                        DO NOT STEAL!
+    ======================================================
+
+    HAS BEEN EXTENSIVELY OBFUSCATED TO PROTECT THE CODE!
+    IF YOU ARE ATTEMPTING TO DEOBFUSCATE IT THEN YOU ARE
+    ATTEMPTING TO STEAL THE SOURCE CODE. IT HAS BEEN MADE
+    THIS WAY FOR A REASON!
+    
+*/
 
 (function () {
 
@@ -99,7 +112,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/basicBot/source/master/lang/langIndex.json", function (json) {
+        $.get("https://rawgit.com/Jeusto/JeustoBot/master/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -231,56 +244,55 @@
         return str;
     };
 
-    var botCreator = "Yemasthui";
-    var botMaintainer = "Benzi"
-    var botCreatorIDs = ["3851534", "4105209"];
+    var botCreator = "Jeusto";
+    var botCreatorID = ["5442079"];
 
     var basicBot = {
-        version: "2.8.17",
+        version: "3.1",
         status: false,
-        name: "basicBot",
+        name: "JeustoBot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
-        cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
+        scriptLink: "https://rawgit.com/Jeusto/JeustoBot/edit/master/jeustoBot.js",
+        cmdLink: "https://git.io/vMCuQ",
+        chatLink: "https://rawgit.com/Jeusto/JeustoBot/master/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "basicBot",
+            botName: "JeustoBot",
             language: "english",
-            chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
-            scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
+            chatLink: "https://rawgit.com/Jeusto/JeustoBot/master/en.json",
+            scriptLink: "ttps://rawgit.com/Jeusto/JeustoBot/edit/master/jeustoBot.js",
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
-            startupEmoji: false, // true or false
+            startupEmoji: true, // true or false
             autowoot: true,
             autoskip: false,
-            smartSkip: true,
+            smartSkip: false,
             cmdDeletion: true,
             maximumAfk: 120,
             afkRemoval: true,
             maximumDc: 60,
-            bouncerPlus: true,
-            blacklistEnabled: true,
+            bouncerPlus: false,
+            blacklistEnabled: false,
             lockdownEnabled: false,
             lockGuard: false,
             maximumLocktime: 10,
-            cycleGuard: true,
+            cycleGuard: false,
             maximumCycletime: 10,
-            voteSkip: false,
-            voteSkipLimit: 10,
-            historySkip: false,
+            voteSkip: true,
+            voteSkipLimit: 4,
+            historySkip: true,
             timeGuard: true,
-            maximumSongLength: 10,
+            maximumSongLength: 7,
             autodisable: true,
             commandCooldown: 30,
             usercommandsEnabled: true,
-            thorCommand: false,
+            thorCommand: true,
             thorCooldown: 10,
-            skipPosition: 3,
+            skipPosition: 1,
             skipReasons: [
                 ["theme", "This song does not fit the room theme. "],
                 ["op", "This song is on the OP list. "],
@@ -288,12 +300,14 @@
                 ["mix", "You played a mix, which is against the rules. "],
                 ["sound", "The song you played had bad sound quality or no sound. "],
                 ["nsfw", "The song you contained was NSFW (image or sound). "],
-                ["unavailable", "The song you played was not available for some users. "]
+                ["unavailable", "The song you played was not available for some users. "],
+                ["blacklist", "The song you played is on the blacklist. "]
+                ["length", "The song you played is longer than the maximum length authorized.  "]
             ],
             afkpositionCheck: 15,
             afkRankCheck: "ambassador",
             motdEnabled: false,
-            motdInterval: 5,
+            motdInterval: 10,
             motd: "Temporary Message of the Day",
             filterChat: true,
             etaRestriction: false,
@@ -309,9 +323,9 @@
             songstats: true,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "https://rawgit.com/basicBot/custom/master/blacklists/NSFWlist.json",
-                OP: "https://rawgit.com/basicBot/custom/master/blacklists/OPlist.json",
-                BANNED: "https://rawgit.com/basicBot/custom/master/blacklists/BANNEDlist.json"
+                NSFW: "https://rawgit.com/basicBo/custom/master/blacklists/NSFWlist.json",
+                OP: "https://rawgit.com/basicBo/custom/master/blacklists/OPlist.json",
+                BANNED: "https://rawgit.com/basicBo/custom/master/blacklists/BANNEDlist.json"
             }
         },
         room: {
