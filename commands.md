@@ -96,20 +96,20 @@ Bouncer
 |!roulette |  | start a roulette | +
 |!spin | @user | move a user somewhere in the waitlist randomly | 
 |!swap | @user1 + @user2 | swap the 2 users position in the waitlist | +
-|!infocycle |  | give some informations about !cycle command |
-|!infoafkremoval |  | give some informations about !afkremoval command |
-|!infosongstats |  | give some informations about !songstats command |
-|!infowelcome |  | give some informations about !welcome command |
-|!infoautodisable |  | give some informations about !autodisable command |
-|!infocommanddeletion |  | give some informations about !commanddeletion command |
-|!infocycleguard |  | give some informations about !cycleguard command |
-|!infofilter |  | give some informations about !filter command |
-|!infotimeguard |  | give some informations about !timeguard command |
-|!infolockguard |  | give some informations about !lockguard command |
-|!inforestriceta |  | give some informations about !restricteta command |
-|!infovoteskip |  | give some informations about !voteskip command |
-|!infousercommands |  | give some informations about !usercommands command |
-|!infolottery |  | give some informations about !lottery command | 
+|!infocycle |  | give some informations about !cycle command | +
+|!infoafkremoval |  | give some informations about !afkremoval command | +
+|!infosongstats |  | give some informations about !songstats command | +
+|!infowelcome |  | give some informations about !welcome command | +
+|!infoautodisable |  | give some informations about !autodisable command | +
+|!infocommanddeletion |  | give some informations about !commanddeletion command | +
+|!infocycleguard |  | give some informations about !cycleguard command | +
+|!infofilter |  | give some informations about !filter command | + 
+|!infotimeguard |  | give some informations about !timeguard command | +
+|!infolockguard |  | give some informations about !lockguard command | +
+|!inforestriceta |  | give some informations about !restricteta command | +
+|!infovoteskip |  | give some informations about !voteskip command | +
+|!infousercommands |  | give some informations about !usercommands command | +
+|!infolottery |  | give some informations about !lottery command | +
 
 Manager
 ----
