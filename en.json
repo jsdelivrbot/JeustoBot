@@ -2022,14 +2022,16 @@
     "getid": "\/me [%%NAME1%%] Username: %%NAME2%%, ID: %%ID%%",
     "profile": "\/me [%%NAME1%%] Username: %%NAME2%%, Profile: %%PROFILE%%"
     "hello": "\/me Hi @%%NAME, how is it going today ?%%",
-    "bye": "\/me See you soon, @%%NAME%%",
-    "reason1": "\/me [Skip reason n°1] The song is in the DJ history.",
-    "reason2": "\/me [Skip reason n°2] The song isn't available for some users.",
-    "reason3": "\/me [Skip reason n°3] The song is longer than the maximum length authorized.",
-    "reason4": "\/me [Skip reason n°4] The song is on the blacklist.",
-    "reason5": "\/me [Skip reason n°5] The song is NSFW.",
-    "reason6": "\/me [Skip reason n°6] The song is overplayed.",
-    "reason6": "\/me [Skip reason n°42] Yolo.",
+    "bye": "\/me See you soon, @%%NAME%%",             
+    "reason1": "\/me [Skip reason n°1] The song is overplayed.",
+    "reason2": "\/me [Skip reason n°2] The song is in the history",
+    "reason3": "\/me [Skip reason n°3] The song is a mix.",
+    "reason4": "\/me [Skip reason n°4] The song has bad sound quality or no sound.",
+    "reason5": "\/me [Skip reason n°5] The song contains NSFW (image or sound).",
+    "reason6": "\/me [Skip reason n°6] The song is not available for some users.",
+    "reason7": "\/me [Skip reason n°7] The song is on the blacklist.",
+    "reason8": "\/me [Skip reason n°8] The song is longer than the maximum length authorized.",
+    "reason42": "\/me [Skip reason n°42] Yolo.",
     "rule1": "\/me [Rule n°1] Use common sense.",
     "rule2": "\/me [Rule n°2] Be respectful to everyone.",
     "rule3": "\/me [Rule n°3] Keep chat in English only.",
@@ -2188,5 +2190,5 @@
     "voteratio": "\/me [@%%NAME%%] @%%USERNAME%% ~ woots: %%WOOT%%, mehs: %%MEHS%%, ratio (w\/m): %%RATIO%%.",
     "website": "\/me Please visit our website: %%LINK%%",
     "youtube": "\/me [%%NAME%%] Subscribe to us on youtube: %%LINK%%",
-    "songstatistics": "\/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W\/%%GRABS%%G\/%%MEHS%%M.".
+    "songstatistics": "\/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W\/%%GRABS%%G\/%%MEHS%%M."
 } 
