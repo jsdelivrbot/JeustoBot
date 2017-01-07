@@ -60,6 +60,93 @@ DJ Resident
 |!hello |  | say hello to JeustoBot |
 |!bye |  | say goodbye to JeustoBot | 
 
+Bouncer
+----
+ 
+|Command | Arguments |  Description |
+|:------:|:---------:|:--------------------------------------:|
+|!skip | (reason) | skips the dj using smartskip. actions such as locking and moving user depends on various factors (the position the dj is moved to can be set with !skippos) |
+|!lockskip |  | skips, locks and moves the dj back up |
+|!skippos | X | set the position to which skip and lockskip moves the dj |
+|!forceskip |  | forceskip the current song | 
+|!skipreason1 | X | remind a specific skip reason | 
+|!rule1 | X | remind a specific rule |
+|!kick | @user + (X) | kicks user for X minutes, default is 0.25 minutes (15 seconds) |
+|!mute | @user + (X) | mute user, for X minutes if X is specified, otherwise for an undefined period|
+|!unmute | @user | unmute user | 
+|!ban | @user | bans user for 1 day | 
+|!unban | @user | unban user | 
+|!add | @user | add user to the waitlist |
+|!move | @user | moves user to position X on the waitlist, default is position 1 | 
+|!remove | @user | remove user from the waitlist |
+|!filter |  | toggle the chat filter |
+|!timeguard |  | toggle the timeguard |
+|!maxlength | X | set the maximum length a song can be when timeguard is enabled |
+|!motd | (message) + (X) | when no argument is specified, returns the Message of the Day, when X is specified, the MotD is given every X songs, when "message" is given, it sets the MotD to message | 
+|!autoskip |  | skip songs automatically when they're done (use when the circles-bug happens) |  
+|!version |  | return the current version of JeustoBot |
+|!status |  | display JeustoBot's status and some settings |
+|!test |  | check if the bot is alive
+|!twitter |  | give a link to JeustoBot’s twitter profile |
+|!owner |  | give some informations about JeustoBot’s owner |
+|!jointime | @user | shows how long the user has been in the room |
+|!afktime | @user | shows how long user has been afk |
+|!active | (X) | shows how many users chatted in the past X minutes. If no X specified, 60 is set as default |
+|!sessionstats |  | display stats for the current session |
+|!voteratio | @user | display the vote statistic for a user |
+|!roulette |  | start a roulette |
+|!spin | @user | move a user somewhere in the waitlist randomly | 
+|!swap | @user1 + @user2 | swap the 2 users position in the waitlist | 
+|!infocycle |  | give some informations about !cycle command |
+|!infoafkremoval |  | give some informations about !afkremoval command |
+|!infosongstats |  | give some informations about !songstats command |
+|!infowelcome |  | give some informations about !welcome command |
+|!infoautodisable |  | give some informations about !autodisable command |
+|!infocommanddeletion |  | give some informations about !commanddeletion command |
+|!infocycleguard |  | give some informations about !cycleguard command |
+|!infofilter |  | give some informations about !filter command |
+|!infotimeguard |  | give some informations about !timeguard command |
+|!infolockguard |  | give some informations about !lockguard command |
+|!inforestriceta |  | give some informations about !restricteta command |
+|!infovoteskip |  | give some informations about !voteskip command |
+|!infousercommands |  | give some informations about !usercommands command |
+|!infolottery |  | give some informations about !lottery command | 
+
+Manager
+----
+ 
+|Command | Arguments |  Description |
+|:------:|:---------:|:--------------------------------------:|
+|!lock |  | lock the waitlist |
+|!unlock |  | unlock the waitlist |
+|!clearchat |  | clear the chat |
+|!deletechat | @user | delete all the chat messages by a certain user |
+|!lockdown |  | lock down the room: only staff can chat |
+|!cycle |  | toggle DJ cycle | 
+|!afkremoval |  | toggle the afk check |
+|!afklimit | X | sets the maximum afk time |
+|!songstats |  | toggle song statistics | 
+|!welcome |  | toggle the welcome message | 
+|!autodisable |  | toggle the auto disable | 
+|!commanddeletion |  | toggle if bot commands gets deleted | 
+|!cycleguard |  | toggles the cycleguard |
+|!cycletimer | X | set the maximum DJ cycle time for when cycleguard is enabled 
+|!lockguard |  | toggle the lockguard | 
+|!locktimer | X | set the maximum time the waitlist can be locked if lockguard is enabled |
+|!restricteta |  | toggle the restriction on eta: grey users can use it once an hour | 
+|!voteskip |  | toggle the voteskip |
+|!setvoteskip | X | when no argument is specified, returns the current voteskip limit, when X is specified, voteskip limit is updated to the new specified limit |
+|!usercommands |  | toggle user commands | 
+|!setusercommands |  | set the cooldown on commands by grey users | 
+|!lottery |  | toggle lottery | 
+|!lotterytimer | X | set the time to wait before next lottery | 
+|!kill |  | shut down JeustoBot |
+|!destroy |  | destroy JeustoBot |
+|!say | (message) | make JeustoBot say anything you want |
+
+
+
+
 
 
 
