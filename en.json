@@ -126,10 +126,22 @@
     "version": "\/me %%BOTNAME%% v%%VERSION%% works fine!",
     "twitter": "\/me You can also follow %%BOTNAME%% on Twitter: http:\/\/twitter.com/JeustoBot\/",
     "owner": "\/me This bot was made by Jeusto. You can visit his Twitter profile here: http:\/\/twitter.com/Jeustoo\/",
+    "infocycle": "\/me [!cycle] When enabled, DJs stay in the wait list.",
+    "infoafkremoval": "\/me [!afkremoval] Turn afk check on or off. When enabled, user has to type in the chat to stay in the wait list. The amount of minutes a user can be afk is set by !afklimit.",
+    "infosongstats": "\/me [!songstats] Toggle message with statistics for the previous song (song name, woots etc).",  
+    "infowelcome": "\/me [!welcome] Toggle the welcome message for users who join the community.",
+    "infoautodisable": "\/me [!autodisable] When enabled, the bot sends out !afkdisable and !joindisable every hour, this disables afk messages and auto joining.",
+    "infocommanddeletion": "\/me [!commanddeletion] When enabled, useless bot commands that you don’t need to see gets automatically deleted.",   
+    "infocycleguard": "\/me [!cycleguard] Cycleguard makes sure DJ cycle isn't on longer than the allowed amount of minutes. The maximum DJ cycle time is set by !cycletimer.",
+    "infofilter": "\/me [!filter] The filter checks for a range of invalid messages like just . 's, excessive caps, asking for skips, some spam etc.",   
+    "infotimeguard": "\/me [!timeguard] Timeguard makes sure songs are not longer than the specified limit, if they are longer, they are skipped immediately.",   
+    "infolockguard": "\/me [!lockguard] Lockguard makes sure the waitlist isn't locked longer than the maximum allowed time. Set the maximum time the waitlist can be locked with !locktimer.",    
+    "inforestriceta": "\/me [!restricteta] The restriction on !eta means that grey users can only use it once every hour, this would be used to prevent spamming the command.",    
+    "infovoteskip": "\/me [!voteskip] When a song reaches the voteskip limit, it automatically gets skipped. Set the limit with !setvoteskip.",    
+    "infousercommands": "\/me [!usercommands] The cooldown for commands for grey users can be set to prevent spamming using !setusercommands.",    
+    "infolottery": "\/me [!lottery] A winner is randomly choosed every X minutes and is moved to first place in the waitlist.",    
     
-
-
-
+    
     "nodatafound": "No previous data found.",
     "currentlang": "\/me Language currently set to: %%LANGUAGE%%",
     "langerror": "\/me The language you've selected isn't available. Please visit %%LINK%% to find a list of languages available.",
