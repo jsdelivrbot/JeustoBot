@@ -1,8 +1,3 @@
-
-
-
-
-
 /**
  *Copyright 2015 basicBot
  *Modifications (including forks) of the code to fit personal needs are allowed only for personal use and should refer back to the original source.
