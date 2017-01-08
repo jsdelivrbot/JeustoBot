@@ -1,7 +1,7 @@
 (function () {
 
     // Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "basicBot";
+    var fork = "Jeusto";
 
     // Define our function responsible for extending the bot.
     function extend() {
@@ -46,14 +46,14 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "basicBot",
+      botName: "JeustoBot",
       language: "english",
-      chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
-      scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
+      chatLink: "https://raw.githubusercontent.com/Jeusto/JeustoBot/master/en.json",
+      scriptLink: "https://raw.githubusercontent.com/Jeusto/JeustoBot/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
-      startupCap: 1, // 1-200
+      startupCap: 50, // 1-200
       startupVolume: 0, // 0-100
-      startupEmoji: false, // true or false
+      startupEmoji: true, // true or false
       autowoot: true,
       autoskip: false,
       smartSkip: true,
@@ -61,22 +61,22 @@
       maximumAfk: 120,
       afkRemoval: true,
       maximumDc: 60,
-      bouncerPlus: true,
-      blacklistEnabled: true,
+      bouncerPlus: false,
+      blacklistEnabled: false,
       lockdownEnabled: false,
       lockGuard: false,
       maximumLocktime: 10,
-      cycleGuard: true,
+      cycleGuard: false,
       maximumCycletime: 10,
-      voteSkip: false,
-      voteSkipLimit: 10,
-      historySkip: false,
+      voteSkip: true,
+      voteSkipLimit: 4,
+      historySkip: true,
       timeGuard: true,
-      maximumSongLength: 10,
-      autodisable: false,
+      maximumSongLength: 7,
+      autodisable: true,
       commandCooldown: 30,
       usercommandsEnabled: true,
-      skipPosition: 3,
+      skipPosition: 1,
       skipReasons: [
       ["theme", "This song does not fit the room theme. "],
       ["op", "This song is on the OP list. "],
@@ -84,12 +84,14 @@
       ["mix", "You played a mix, which is against the rules. "],
       ["sound", "The song you played had bad sound quality or no sound. "],
       ["nsfw", "The song you contained was NSFW (image or sound). "],
-      ["unavailable", "The song you played was not available for some users. "]
+      ["unavailable", "The song you played was not available for some users. "],
+      ["blacklist", "The song you played is on the blacklist. "]
+      ["length", "The song you played is longer than the maximum length authorized.  "]
       ],
       afkpositionCheck: 15,
       afkRankCheck: "ambassador",
       motdEnabled: false,
-      motdInterval: 5,
+      motdInterval: 10,
       motd: "Temporary Message of the Day",
       filterChat: true,
       etaRestriction: false,
@@ -112,6 +114,6 @@
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/basicBot/source/master/basicBot.js", extend);
+    $.getScript("https://raw.githubusercontent.com/Jeusto/JeustoBot/master/basicBot.js", extend);
 
 }).call(this);
