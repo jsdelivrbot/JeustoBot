@@ -30,7 +30,7 @@
         clearInterval(JeustoBot.room.afkInterval);
         JeustoBot.status = false;
     };
-
+ 
     // This socket server is used solely for statistical and troubleshooting purposes.
     // This server may not always be up, but will be used to get live data at any given time.
 
