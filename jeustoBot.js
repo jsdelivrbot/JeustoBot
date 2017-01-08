@@ -1,22 +1,9 @@
-/*
-   
-    JeustoBot - Copyright (c) 2017 Jeusto
-    Please do not copy or modify without permission.
+/**
+ *Copyright 2015 JeustoBot
+ *Modifications (including forks) of the code to fit personal needs are allowed only for personal use and should refer back to the original source.
+ *This software is not for profit, any extension, or unauthorised person providing this software is not authorised to be in a position of any monetary gain from this use of this software. Any and all money gained under the use of the software (which includes donations) must be passed on to the original author.
+ */
 
-    BOT OWNER: JEUSTO
-    CONTACT: jeustographics@gmail.com
-    TWITTER: https://twitter.com/Jeustoo
-
-    ======================================================
-                        DO NOT STEAL!
-    ======================================================
-
-    HAS BEEN EXTENSIVELY OBFUSCATED TO PROTECT THE CODE!
-    IF YOU ARE ATTEMPTING TO DEOBFUSCATE IT THEN YOU ARE
-    ATTEMPTING TO STEAL THE SOURCE CODE. IT HAS BEEN MADE
-    THIS WAY FOR A REASON!
-    
-*/
 
 (function () {
 
@@ -112,7 +99,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/Jeusto/JeustoBot/master/langIndex.json", function (json) {
+        $.get("https://rawgit.com/JeustoBot/source/master/lang/langIndex.json", function (json) {
             var link = JeustoBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -244,17 +231,18 @@
         return str;
     };
 
-    var botCreator = "Jeusto";
-    var botCreatorID = ["5442079"];
+    var botCreator = "Yemasthui";
+    var botMaintainer = "Benzi"
+    var botCreatorIDs = ["3851534", "4105209"];
 
     var JeustoBot = {
-        version: "3.1",
+        version: "2.8.17",
         status: false,
         name: "JeustoBot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/Jeusto/JeustoBot/edit/master/jeustoBot.js",
-        cmdLink: "https://git.io/vMCuQ",
-        chatLink: "https://rawgit.com/Jeusto/JeustoBot/master/en.json",
+        scriptLink: "https://rawgit.com/JeustoBot/source/master/JeustoBot.js",
+        cmdLink: "http://git.io/245Ppg",
+        chatLink: "https://rawgit.com/JeustoBot/source/master/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -262,37 +250,37 @@
         settings: {
             botName: "JeustoBot",
             language: "english",
-            chatLink: "https://rawgit.com/Jeusto/JeustoBot/master/en.json",
-            scriptLink: "https://rawgit.com/Jeusto/JeustoBot/edit/master/jeustoBot.js",
+            chatLink: "https://rawgit.com/JeustoBot/source/master/lang/en.json",
+            scriptLink: "https://rawgit.com/JeustoBot/source/master/JeustoBot.js",
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
-            startupEmoji: true, // true or false
+            startupEmoji: false, // true or false
             autowoot: true,
             autoskip: false,
-            smartSkip: false,
+            smartSkip: true,
             cmdDeletion: true,
             maximumAfk: 120,
             afkRemoval: true,
             maximumDc: 60,
-            bouncerPlus: false,
-            blacklistEnabled: false,
+            bouncerPlus: true,
+            blacklistEnabled: true,
             lockdownEnabled: false,
             lockGuard: false,
             maximumLocktime: 10,
-            cycleGuard: false,
+            cycleGuard: true,
             maximumCycletime: 10,
-            voteSkip: true,
-            voteSkipLimit: 4,
-            historySkip: true,
+            voteSkip: false,
+            voteSkipLimit: 10,
+            historySkip: false,
             timeGuard: true,
-            maximumSongLength: 7,
+            maximumSongLength: 10,
             autodisable: true,
             commandCooldown: 30,
             usercommandsEnabled: true,
-            thorCommand: true,
+            thorCommand: false,
             thorCooldown: 10,
-            skipPosition: 1,
+            skipPosition: 3,
             skipReasons: [
                 ["theme", "This song does not fit the room theme. "],
                 ["op", "This song is on the OP list. "],
@@ -300,14 +288,12 @@
                 ["mix", "You played a mix, which is against the rules. "],
                 ["sound", "The song you played had bad sound quality or no sound. "],
                 ["nsfw", "The song you contained was NSFW (image or sound). "],
-                ["unavailable", "The song you played was not available for some users. "],
-                ["blacklist", "The song you played is on the blacklist. "]
-                ["length", "The song you played is longer than the maximum length authorized.  "]
+                ["unavailable", "The song you played was not available for some users. "]
             ],
             afkpositionCheck: 15,
             afkRankCheck: "ambassador",
             motdEnabled: false,
-            motdInterval: 10,
+            motdInterval: 5,
             motd: "Temporary Message of the Day",
             filterChat: true,
             etaRestriction: false,
@@ -323,9 +309,9 @@
             songstats: true,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "https://rawgit.com/basicBot/custom/master/blacklists/NSFWlist.json",
-                OP: "https://rawgit.com/basicBot/custom/master/blacklists/OPlist.json",
-                BANNED: "https://rawgit.com/basicBot/custom/master/blacklists/BANNEDlist.json"
+                NSFW: "https://rawgit.com/JeustoBot/custom/master/blacklists/NSFWlist.json",
+                OP: "https://rawgit.com/JeustoBot/custom/master/blacklists/OPlist.json",
+                BANNED: "https://rawgit.com/JeustoBot/custom/master/blacklists/BANNEDlist.json"
             }
         },
         room: {
